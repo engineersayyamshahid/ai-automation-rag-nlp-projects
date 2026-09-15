@@ -30,7 +30,11 @@
 </p>
 
 
-## 👨‍💻 Author :  **Sayyam Shahid**
+## 👨‍💻 Author :   Sayyam Shahid — Full Stack AI Engineer 
+
+## 🎓 Institution :   Federal Urdu University of Arts, Science & Technology 
+   
+## Focus : **Prompt Engineering → AI Automation → APIs → RAG → NLP → Chatbots → LLM Applications**
 
 ### Full Stack AI Engineer | AI Automation Engineer | Full Stack Developer
 
