@@ -1,0 +1,59 @@
+Create a professional 5-slide presentation for a software and digital solutions agency called SYFA Digital.
+
+Campaign:
+"Transforming Ideas into Digital Success"
+
+Presenter:
+Sayyam Shahid
+Full Stack Developer | Co-Founder/CEO
+
+Company services:
+- Full-Stack Web Development
+- Next.js
+- MERN
+- AI Development
+- AI Automation
+- AI Agents
+- Chatbots
+- SEO
+- E-Commerce
+- WordPress
+- Shopify
+- Custom Software
+- SaaS Applications
+
+Target audience:
+Business owners, startups, entrepreneurs, and organizations.
+
+Create exactly 5 slides:
+
+Slide 1:
+SYFA Digital introduction, tagline, and presenter.
+
+Slide 2:
+Digital challenges faced by modern businesses.
+
+Slide 3:
+SYFA Digital services and solutions.
+
+Slide 4:
+How SYFA Digital transforms an idea into a digital product:
+Discover → Design → Develop → Automate → Grow.
+
+Slide 5:
+Strong call-to-action and contact/presentation closing.
+
+Design:
+Premium modern software agency style inspired by modern SaaS companies.
+
+Colors:
+Deep navy #081B33
+Electric blue #2563EB
+Cyan #06B6D4
+White.
+
+Use minimal text, strong visual hierarchy, modern icons, clean layouts, subtle gradients, and professional technology visuals.
+
+Do not invent company statistics, client numbers, awards, or achievements.
+
+The presentation should look suitable for a professional software agency portfolio and university AI-content-generation assignment.

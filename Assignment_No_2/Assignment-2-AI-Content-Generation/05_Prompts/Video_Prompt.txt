@@ -1,0 +1,56 @@
+Create a 10-second premium corporate AI introduction video for SYFA DIGITAL using the provided character reference photo and company branding image/logo.
+
+Character Identity Requirements:
+Use the exact provided character photo as the AI presenter.
+The character must represent Sayyam Shahid, CEO of SYFA DIGITAL.
+Preserve the character’s face identity 100%.
+Do not change facial structure, eyes, hairstyle, skin details, or appearance.
+Keep the same face throughout the entire video.
+Create realistic facial expressions, natural blinking, confident eye contact, and professional gestures.
+Scene & Branding:
+
+Create a futuristic luxury technology office environment.
+
+Display SYFA DIGITAL company name/logo clearly.
+Add premium AI, software, and digital innovation elements in the background.
+Make the character look like a CEO delivering a professional company message.
+Corporate, trustworthy, and high-end technology brand feeling.
+Camera & Quality:
+Cinematic close-up shot
+Smooth camera movement
+Ultra-realistic human animation
+4K cinematic quality
+Professional corporate advertisement style
+Natural lighting
+Perfect AI lip synchronization
+Character Action:
+
+The CEO looks directly into the camera, smiles slightly, and speaks with confidence while using natural hand gestures.
+
+10-Second Voiceover Script:
+
+"Hello, I am Sayyam Shahid, CEO of SYFA DIGITAL. We create innovative AI and digital solutions to build the future of technology."
+
+Voice Style:
+Professional CEO voice
+Confident and inspiring tone
+Clear English pronunciation
+Natural speaking speed
+Perfect lip sync with character
+Subtle futuristic corporate background music
+Negative Prompt:
+Do not change the character face.
+Do not create another person.
+Do not alter identity.
+Do not modify the logo or company name.
+Do not add extra people.
+No cartoon/anime style.
+No unrealistic facial movements.
+No distorted hands or body.
+Output Settings:
+Duration: 10 seconds
+Quality: 4K
+Style: Luxury AI Corporate Brand Introduction
+Format: 9:16 (Reels/TikTok) or 16:9 (Website/LinkedIn)
+
+This version positions the character as the CEO spokesperson while maintaining face consistency and professional brand authority.
