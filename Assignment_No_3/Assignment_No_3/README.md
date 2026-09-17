@@ -1,208 +1,396 @@
-Multi-Input AI Analysis Pipeline
+# 🤖 Multi-Input AI Analysis Pipeline
 
+<p align="center">
+  <strong>AI-Powered Multi-Format Document & Data Analysis using Python + Gemini API</strong>
+</p>
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/Gemini-API-4285F4?style=for-the-badge&logo=google&logoColor=white" alt="Gemini API">
+  <img src="https://img.shields.io/badge/AI-Automation-00C2FF?style=for-the-badge" alt="AI Automation">
+  <img src="https://img.shields.io/badge/Status-Completed-00C853?style=for-the-badge" alt="Status">
+</p>
 
-Assignment Information
+<p align="center">
+  <a href="https://github.com/">
+    <img src="https://img.shields.io/badge/GitHub-Repository-181717?style=flat-square&logo=github" alt="GitHub">
+  </a>
+  <img src="https://img.shields.io/badge/Assignment-03-6C63FF?style=flat-square" alt="Assignment">
+  <img src="https://img.shields.io/badge/BSCS-5th%20Semester-FF6B6B?style=flat-square" alt="BSCS">
+</p>
 
-Field               Details
+---
 
-Assignment      Assignment 3 --- AI Pipeline
-Author          Sayyam Shahid
-Program         BSCS
-Semester        5th Semester
-Internship      AI Automation Institute
-University      FUUAST, Islamabad
-AI Model        Gemini API
-Main Language   Python
+## 📌 Project Information
 
-Author LinkedIn: Sayyam
-Shahid
+| Field                | Details                    |
+| -------------------- | -------------------------- |
+| 📚 **Assignment**    | Assignment 3 — AI Pipeline |
+| 👨‍💻 **Author**     | Sayyam Shahid              |
+| 🎓 **Program**       | BSCS                       |
+| 📖 **Semester**      | 5th Semester               |
+| 🤖 **Internship**    | AI Automation Institute    |
+| 🏫 **University**    | FUUAST, Islamabad          |
+| 🧠 **AI Model**      | Gemini API                 |
+| 🐍 **Main Language** | Python                     |
+| ⚙️ **Project Type**  | AI Automation Pipeline     |
 
-1. Project Overview
+---
 
-The Multi-Input AI Analysis Pipeline is a Python-based AI automation
-project that accepts different types of input, processes the information
-according to its format, sends the prepared information to a Gemini AI
-model, and generates a structured analysis.
+# 🌟 Project Overview
 
-The pipeline is designed to reduce repetitive manual work involved in
-reading documents, examining data, answering questions, and preparing
-reports.
+**Multi-Input AI Analysis Pipeline** is a Python-based AI automation system that accepts multiple types of input, automatically identifies the input format, extracts or prepares its content, sends the information to the **Gemini AI model**, and generates a structured analysis report.
 
-2. Supported Inputs
+The purpose of this project is to reduce repetitive manual work involved in:
 
-The pipeline supports:
+* 📄 Reading documents
+* 📊 Examining structured data
+* 🖼️ Understanding images
+* ❓ Answering user questions
+* 📝 Generating reports
+* 🔄 Automating information-processing workflows
 
-Text files --- .txt
+Instead of creating a separate program for every file type, this project provides a **single automated pipeline**.
 
-CSV files --- .csv
+---
 
-PDF files --- .pdf
+# 🎯 Main Objective
 
-Images --- .jpg, .jpeg, .png, .webp
+The main objective is to build an AI pipeline capable of handling different input formats through one unified workflow:
 
-JSON files --- .json
+```text
+Different Inputs
+      ↓
+Input Detection
+      ↓
+Content Extraction
+      ↓
+Prompt Preparation
+      ↓
+Gemini AI
+      ↓
+AI Analysis
+      ↓
+Structured Output
+```
 
-Markdown files --- .md
+---
 
-User questions
+# 📥 Supported Inputs
 
-3. Pipeline Workflow
+The pipeline currently supports:
 
-Input
-  │
-  ├── Text
-  ├── CSV
-  ├── PDF
-  ├── Image
-  ├── JSON
-  ├── Markdown
-  └── User Question
-          │
-          ▼
-   Python Input Detection
-          │
-          ▼
-   Content Extraction
-          │
-          ▼
-   Prompt Preparation
-          │
-          ▼
-      Gemini API
-          │
-          ▼
-     AI Analysis
-          │
-          ▼
-   Output Generation
-       │          │
-       ▼          ▼
-     TXT         JSON
-     Report      Report
+| Input            | Extension                        | Processing                          |
+| ---------------- | -------------------------------- | ----------------------------------- |
+| 📄 Text          | `.txt`                           | Direct text extraction              |
+| 📊 CSV           | `.csv`                           | Rows converted into structured text |
+| 📕 PDF           | `.pdf`                           | Text extraction using PyPDF2        |
+| 🖼️ Image        | `.jpg`, `.jpeg`, `.png`, `.webp` | Direct Gemini visual analysis       |
+| 🗂️ JSON         | `.json`                          | Structured data loading             |
+| 📝 Markdown      | `.md`                            | Direct text extraction              |
+| 💬 User Question | —                                | Direct AI question-answering        |
 
-Simple Pipeline
+---
 
-Input → Python → Content Extraction → Gemini API → AI Analysis → Final
-Output
+# 🔥 Key Features
 
-4. Technologies Used
+### 🧩 Multi-Input Support
 
-Python
+One pipeline can process multiple input formats.
 
-Python is used as the main programming language for controlling the
-complete workflow.
+### 🔍 Automatic Input Detection
 
-Gemini API
+The program determines the appropriate processing method based on the file extension.
 
-The Gemini API is used as the AI processing component. It receives the
-prepared prompt or image input and generates the analysis.
+### 📄 Document Processing
 
+TXT, Markdown, CSV, PDF, and JSON files can be processed automatically.
+
+### 👁️ Image Analysis
+
+Images can be sent to Gemini for multimodal visual analysis.
+
+### 🤖 Gemini AI Integration
+
+The extracted information is analyzed using Google's Gemini API.
+
+### 🔄 Retry Mechanism
+
+Temporary API failures are handled using retry logic with exponential waiting.
+
+### 📑 Structured Reports
+
+The AI result can be stored in:
+
+* TXT
+* JSON
+
+### 🔐 Environment-Based API Key
+
+The Gemini API key is loaded securely through `.env`.
+
+### ⚡ Automated Workflow
+
+The complete process is controlled through Python.
+
+---
+
+# 🏗️ System Architecture
+
+```text
+                    ┌──────────────────────┐
+                    │      USER INPUT      │
+                    └──────────┬───────────┘
+                               │
+          ┌────────────────────┼────────────────────┐
+          │                    │                    │
+          ▼                    ▼                    ▼
+     ┌─────────┐          ┌─────────┐         ┌─────────┐
+     │  Files  │          │ Images  │         │Question │
+     └────┬────┘          └────┬────┘         └────┬────┘
+          │                    │                    │
+          └────────────────────┼────────────────────┘
+                               ▼
+                    ┌──────────────────────┐
+                    │  Python Input        │
+                    │  Detection            │
+                    └──────────┬───────────┘
+                               │
+                               ▼
+                    ┌──────────────────────┐
+                    │ Content Extraction   │
+                    └──────────┬───────────┘
+                               │
+                               ▼
+                    ┌──────────────────────┐
+                    │ Prompt Preparation   │
+                    └──────────┬───────────┘
+                               │
+                               ▼
+                    ┌──────────────────────┐
+                    │     Gemini API       │
+                    │     AI Model         │
+                    └──────────┬───────────┘
+                               │
+                               ▼
+                    ┌──────────────────────┐
+                    │    AI Analysis       │
+                    └──────────┬───────────┘
+                               │
+                 ┌─────────────┴─────────────┐
+                 ▼                           ▼
+        ┌────────────────┐          ┌────────────────┐
+        │   TXT Report   │          │   JSON Report  │
+        └────────────────┘          └────────────────┘
+```
+
+---
+
+# 🔄 Complete Pipeline
+
+```text
+┌────────────────┐
+│     INPUT      │
+│ TXT / CSV /    │
+│ PDF / IMAGE /  │
+│ JSON / MD / Q  │
+└───────┬────────┘
+        │
+        ▼
+┌────────────────┐
+│ INPUT DETECTION│
+└───────┬────────┘
+        │
+        ▼
+┌────────────────┐
+│    CONTENT     │
+│   EXTRACTION   │
+└───────┬────────┘
+        │
+        ▼
+┌────────────────┐
+│     PROMPT     │
+│   PREPARATION  │
+└───────┬────────┘
+        │
+        ▼
+┌────────────────┐
+│   GEMINI API   │
+└───────┬────────┘
+        │
+        ▼
+┌────────────────┐
+│   AI ANALYSIS  │
+└───────┬────────┘
+        │
+        ▼
+┌─────────────────────────┐
+│     OUTPUT GENERATION   │
+├─────────────┬───────────┤
+│             │           │
+▼             ▼           ▼
+TXT          JSON       Terminal
+Report       Report     Response
+```
+
+---
+
+# ⚙️ Processing Workflow
+
+## 1️⃣ Input Detection
+
+Python checks the selected file and determines its format.
+
+```text
+File
+ ↓
+Extension Check
+ ↓
+┌──────┬──────┬──────┬──────┬──────┐
+TXT   CSV    PDF   IMAGE   JSON    MD
+```
+
+---
+
+## 2️⃣ Content Extraction
+
+Each format uses an appropriate processing method.
+
+```text
+TXT / MD
+   ↓
+Read Text
+
+CSV
+   ↓
+Read Rows
+   ↓
+Structured Text
+
+PDF
+   ↓
 PyPDF2
+   ↓
+Extract Text
 
-PyPDF2 is used to extract text from PDF documents.
+JSON
+   ↓
+json.load()
+   ↓
+Formatted Data
 
-python-dotenv
+IMAGE
+   ↓
+Gemini Vision Input
+```
 
-python-dotenv loads the Gemini API key from the .env file.
+---
 
-CSV and JSON
+## 3️⃣ Prompt Preparation
 
-Python's built-in csv and json modules are used to process
-structured data.
+The pipeline prepares a structured prompt containing:
 
-pathlib
+* Input type
+* Input filename
+* Analysis instructions
+* Extracted content
+* Required report sections
 
-pathlib is used for file and directory management.
+The AI is instructed to provide:
 
-5. Main Processing Steps
-
-Step 1 --- Input Detection
-
-The program checks the file extension and determines whether the input
-is TXT, CSV, PDF, image, JSON, Markdown, or another type.
-
-Step 2 --- Content Extraction
-
-The appropriate processing function is selected:
-
-TXT/Markdown → text is read directly.
-
-CSV → rows are converted into JSON-formatted text.
-
-PDF → text is extracted using PyPDF2.
-
-JSON → structured data is loaded and formatted.
-
-Image → the image is sent directly to Gemini for visual analysis.
-
-Step 3 --- AI Prompt Preparation
-
-The program prepares a structured prompt containing:
-
-Input type
-
-Input name
-
-Analysis instructions
-
-Extracted input content
-
-The requested analysis includes:
-
+```text
 Executive Summary
-
+        ↓
 Main Information
-
+        ↓
 Important Points
-
+        ↓
 Key Findings
-
-Data Analysis, when applicable
-
-Questions and Answers, when applicable
-
+        ↓
+Data Analysis
+        ↓
+Questions & Answers
+        ↓
 Conclusion
+```
 
-Step 4 --- Gemini AI Processing
+---
+
+# 🤖 Gemini AI Processing
 
 The prepared information is sent to the Gemini API.
 
-The pipeline also includes a retry mechanism for temporary API failures.
+```text
+Python Application
+       │
+       ▼
+Prepared Prompt
+       │
+       ▼
+Gemini API
+       │
+       ▼
+Gemini Model
+       │
+       ▼
+Generated Analysis
+       │
+       ▼
+Python Application
+```
 
-Step 5 --- Output Generation
+The pipeline also includes a retry mechanism to handle temporary API or network failures.
 
-For file analysis, the result is saved as:
+---
 
+# 📤 Output Generation
+
+Generated analysis can be stored inside the `output/` directory.
+
+```text
 output/
+│
 ├── sample_analysis.txt
-└── sample_analysis.json
-
-For user questions:
-
-output/
+├── sample_analysis.json
 └── user_question_answer.txt
+```
 
-6. Example Input
+### TXT Output
 
-sample.txt
+Human-readable report containing the AI analysis.
 
+### JSON Output
+
+Structured output that can be reused by another application or automation workflow.
+
+---
+
+# 📝 Example Input
+
+### `sample.txt`
+
+```text
 Artificial Intelligence in Automation
 
-Artificial Intelligence can automate repetitive tasks and help organizations
-analyze information faster.
+Artificial Intelligence can automate repetitive tasks and help
+organizations analyze information faster.
 
-An AI pipeline can accept different types of input, process the information
-using Python, send it to an AI model, and generate a useful report.
+An AI pipeline can accept different types of input, process the
+information using Python, send it to an AI model, and generate
+a useful report.
 
 The main benefits are automation, faster analysis, and structured output.
+```
 
-7. Example Output
+---
 
+# 📊 Example AI Output
+
+```text
 EXECUTIVE SUMMARY
 
-The input explains how Artificial Intelligence can be used to automate
-repetitive tasks and analyze information.
+The input explains how Artificial Intelligence can be used to
+automate repetitive tasks and analyze information.
 
 MAIN INFORMATION
 
@@ -222,59 +410,17 @@ CONCLUSION
 
 AI pipelines provide a practical way to connect data processing
 with AI analysis and automated report generation.
+```
 
-8. Project Structure
+---
 
-Assignment_No_3/
-│
-├── input/
-│   ├── sample.csv
-│   ├── sample.jpg
-│   ├── sample.txt
-│   └── SAYYAM SHAHID.pdf
-│
-├── output/
-│   ├── ai_report.txt
-│   ├── sample_analysis.json
-│   └── sample_analysis.txt
-│
-├── .env
-├── .gitignore
-├── ai_pipeline.py
-├── README.md
-└── requirements.txt
+# 🖥️ Application Menu
 
-9. Installation
+When the program starts, the user receives an interactive menu:
 
-Make sure Python is installed.
-
-Install the required packages:
-
-pip install -r requirements.txt
-
-Or install the main dependencies directly:
-
-pip install google-genai python-dotenv PyPDF2
-
-10. API Key Configuration
-
-Create a .env file in the project root:
-
-GEMINI_API_KEY=your_gemini_api_key_here
-
-The API key should not be hard-coded into the Python source code or
-uploaded publicly.
-
-11. Run the Project
-
-Run:
-
-python ai_pipeline.py
-
-The program displays a menu:
-
+```text
 =======================================================
-              SELECT INPUT TYPE
+              MULTI-INPUT AI PIPELINE
 =======================================================
 
 1. Text File (.txt)
@@ -286,124 +432,57 @@ The program displays a menu:
 7. Markdown File (.md)
 8. Exit
 
-Select the required option and follow the instructions.
+=======================================================
+Select an option:
+```
 
-12. User Question Workflow
+---
 
-The pipeline also supports direct questions.
+# 💬 User Question Workflow
 
-User Question
-      ↓
-Python receives question
-      ↓
-Prompt preparation
-      ↓
-Gemini API
-      ↓
-AI Answer
-      ↓
-user_question_answer.txt
+The pipeline can also work without a file.
 
-The generated answer is displayed in the terminal and saved to the
-output folder.
+```text
+             USER QUESTION
+                   │
+                   ▼
+          Python Receives Input
+                   │
+                   ▼
+            Prompt Preparation
+                   │
+                   ▼
+               Gemini API
+                   │
+                   ▼
+               AI Answer
+                   │
+                   ▼
+        ┌──────────┴──────────┐
+        ▼                     ▼
+    Terminal             TXT File
+                         Output
+```
 
-13. Error Handling
+Example:
 
-The project includes several error-handling mechanisms:
+```text
+Question:
+What is artificial intelligence?
 
-Missing API key detection
+        ↓
 
-File existence checking
+Gemini AI
 
-Invalid file-selection handling
+        ↓
 
-Empty user-question validation
+AI-generated explanation
 
-Gemini API retry mechanism
+        ↓
 
-Exponential waiting between retry attempts
+output/user_question_answer.txt
+```
 
-14. Limitations
+---
 
-Some limitations of the pipeline are:
-
-A valid Gemini API key is required.
-
-The configured Gemini model must be available to the API account.
-
-PDF extraction may be incomplete for scanned/image-only PDFs.
-
-AI output depends on the quality and completeness of the input.
-
-API failures or network problems can interrupt AI processing.
-
-Large files may require additional chunking or token-management
-logic in a production system.
-
-15. Assignment Requirements Covered
-
-Requirement     Implementation
-
-Input           TXT, CSV, PDF, Image, JSON, Markdown, User Question
-Processing      Python
-AI Model        Gemini API
-Output          TXT, JSON, AI Answer, Analysis
-Pipeline        Multi-step automated workflow
-Diagram         Included
-Sample Input    Included
-Sample Output   Included
-Explanation     Included in assignment
-Screenshots     VS Code / working pipeline screenshots
-
-16. Learning Outcomes
-
-Through this project, I learned how to:
-
-Build an AI automation pipeline.
-
-Work with multiple file formats.
-
-Detect input types programmatically.
-
-Extract information from documents.
-
-Connect Python with an AI API.
-
-Prepare structured prompts.
-
-Process image input with an AI model.
-
-Handle API errors and retries.
-
-Generate structured TXT and JSON outputs.
-
-Organize an AI project into reusable functions.
-
-17. Author
-
-Sayyam Shahid
-BSCS --- 5th Semester
-AI Automation Institute
-FUUAST, Islamabad
-
-LinkedIn
-
-Connect with Sayyam Shahid on
-LinkedIn
-
-18. Conclusion
-
-The Multi-Input AI Analysis Pipeline demonstrates how Python and an AI
-API can be connected to automate information processing. Instead of
-manually processing each input type, the system detects the input,
-extracts or prepares its content, sends it to Gemini for analysis, and
-saves the generated result.
-
-This project provides a practical foundation for developing more
-advanced AI automation systems involving document analysis, data
-processing, multimodal AI, automated reporting, and intelligent
-assistants.
-
-Author: Sayyam Shahid
-Assignment 3 --- AI Pipeline
-BSCS Semester 5 | AI Automation Institute | FUUAST Islamabad
+#
